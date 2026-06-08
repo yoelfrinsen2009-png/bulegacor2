@@ -1,0 +1,212 @@
+**\*Perpustakaan Digital**
+
+
+
+Aplikasi Manajemen Perpustakaan berbasis \*\*PHP + MySQL\*\* dengan tampilan modern dark theme.
+
+
+
+\----------------------------------------
+
+
+
+**\*Fitur**
+
+
+
+\- ✅ Sistem Login dengan proteksi (maksimal 3 kali percobaan)
+
+\- ✅ Manajemen User (Admin \& Member)
+
+\- ✅ Manajemen Buku
+
+\- ✅ Peminjaman \& Pengembalian Buku
+
+\- ✅ Dashboard Statistik
+
+\- ✅ Laporan PDF (menggunakan TCPDF)
+
+\- ✅ Responsive Design
+
+\- ✅ Dark Theme Modern
+
+
+
+\------------------------------
+
+
+
+**\*Teknologi yang Digunakan**
+
+
+
+\- \*\*PHP\*\* 8.x
+
+\- \*\*MySQL\*\* / MariaDB
+
+\- \*\*PDO\*\* (Database Connection)
+
+\- \*\*TCPDF\*\* (Generate PDF)
+
+\- \*\*HTML5 + CSS3\*\*
+
+\- \*\*Bootstrap-like Custom CSS\*\*
+
+\--------------------------------
+
+
+
+**\*Struktur Folder**
+
+Perpustakaan/
+
+├── index.php                 # Halaman Login
+
+├── dashboard.php             # Dashboard Utama
+
+├── logout.php
+
+├── config/
+
+│   └── database.php          # Koneksi Database
+
+├── user/                     # CRUD User
+
+├── buku/                     # CRUD Buku
+
+├── peminjaman/               # CRUD Peminjaman
+
+├── report/
+
+│   └── pdf.php               # Generate Laporan PDF
+
+├── assets/
+
+│   ├── css/
+
+│   │   └── style.css
+
+│   └── js/
+
+│       └── script.js
+
+└── vendor/tecnickcom/tcpdf/
+
+
+
+\-------------------------------------------------
+
+
+
+**\*Cara Instalasi**
+
+
+
+1\. Persiapan Database
+
+2\. Buat database baru dengan nama \*\*`perpustakaan`\*\*
+
+3\. Jalankan query SQL berikut:
+
+sql
+
+CREATE DATABASE perpustakaan;
+
+USE perpustakaan;
+
+Import tabel-tabel dari file perpustakaan.sql
+
+
+
+\------------------------------------------
+
+4\. Konfigurasi
+
+Edit file config/database.php sesuai environment kamu:
+
+PHP$host     = 'localhost';
+
+$dbname   = 'perpustakaan';
+
+$username = 'root';
+
+$password = '';        // kosongkan jika pakai XAMPP default
+
+\-------------------------------------------------------------
+
+
+
+
+
+5\. Jalankan Aplikasi
+
+Letakkan folder Perpustakaan ke folder htdocs (XAMPP/Laragon)
+
+Buka browser: http://localhost/Perpustakaan
+
+
+
+\--------------------------------------------------------------
+
+**\*Akun Default (Admin)**
+
+EmailPasswordRole:admin@perpus.com
+
+password:Password
+
+
+
+\---------------------------------------------------------------------
+
+**\*Fitur yang Sudah Ada**
+
+
+
+&#x20;Login \& Logout
+
+&#x20;Manajemen User (CRUD)
+
+&#x20;Dashboard dengan statistik
+
+&#x20;Peminjaman Buku
+
+&#x20;Laporan PDF
+
+&#x20;Manajemen Buku (masih perlu dilengkapi)
+
+
+
+\------------------------------------------------------------------------
+
+**\*Catatan Penting**
+
+
+
+Folder buku/ masih perlu dilengkapi (CRUD Buku).
+
+Beberapa file di folder buku/ dan peminjaman/ masih perlu penyesuaian.
+
+Pastikan ekstensi pdo\_mysql aktif di PHP.
+
+Untuk preview di VS Code, gunakan extension PHP Server atau Live Server.
+
+\----------------------------------------------------------------------
+
+
+
+**\*Cara Penggunaan**
+
+
+
+Login sebagai Admin
+
+Tambah data buku
+
+Tambah user member (opsional)
+
+Lakukan peminjaman buku
+
+Cetak laporan melalui menu Report PDF
+
+
+
